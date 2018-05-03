@@ -30,9 +30,9 @@ public class App {
 			connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
 			statement = connection.createStatement();
 
-			String sql = "SELECT first_name,last_name,email,age FROM STUDENT";
+			String Sql = "SELECT first_name,last_name,email,age FROM STUDENT";
 
-			ResultSet resultSet = statement.executeQuery(sql);
+			ResultSet resultSet = statement.executeQuery(Sql);
 
 			while (resultSet.next()) {
 
